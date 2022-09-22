@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новоазовск</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html"><img src="img/logo.gif" width="75" height="85" alt=""> </a>
+    </div>
+    <div id="about">
+        <a href="history.html" rel="noopener noreferrer" title="История города" >История города</a>
+        <a href="structure.html" title="Инфраструктура">Инфраструктура</a>
+        <a href="culture.html"  title="Культура и исскуство">Культура и исскуство</a>
+        <a href="feedback.html" title="Обратная связь">Обратная связь</a>
+    </div>
+  </header>
+   <div id="main">
+      <div class="intro">
+        <h2>Инфраструктура </h2>
+        <span>Расположен на побережье Азовского моря, к востоку от Мариуполя, в устье реки Грузской Еланчик</span>
+      </div>
+    </div> 
+    <div id="map">
+        <div class="img">
+         <img src="img/map.png" width="950" height="600" margin-left="150" alt="">
+       </div>
+      </div>
+       </div>    
+  
+        </table>
+
+     <div id="main">
+      <div class="geography">
+        <h2>География города </h2>
+        <h4 class="g_subtitle">Город Новоазовск расположен на 47°06'53″ч северной широты и 38°04'50″ восточной долготы на высоте 241 метр над уровнем моря.</h4>
+   </div>
+   <div class="geography">
+      <h2 class="g_title">Административное деление города</h2>
+      <h4 class="g_subtitle">Район в укрупнённых границах с 17 июля 2020 года номинально делится на 5 территориальных общин (громад)в том числе 3 городские и 2 поселковые общины:
+      г.Кальмиусское, г.Докучаевск, г.Новоазовск, поселки пгт Бойковское и пгт Старобешево.
+      </h4>
+   </div>
+   <div class="geography">
+      <h2 class="g_title">Экономика</h2>
+      <h4 class="g_subtitle">ЗАО «Новоазовская птицефабрика», ООО «Агрофирма „Россия“» (образован в 1950 году из колхозов имени Первого Буденовского совета и «Революционной волны», до 1970 года назывался колхозом имени Будённого), агроцех 27 Мариупольского металлургического комбината им. Ильича, ОАО «Новоазовский завод минеральной воды». Бывшие рыбсовхоз «Украина» (образован в 1930 году, до 1958 года — рыбсовхоз имени Ворошилова), племсовхоз имени Розы Люксебург. Бывший комбикормовый завод, колонна треста «Ждановсельстрой», «Сельхозтехника», Новоазовская ВЭС.
+      </h4>
+   </div>
+   <div class="geography">
+      <h2 class="g_title">Общественный транспорт города</h2>
+      <h4 class="g_subtitle">Автобусное сообщение с Донецком</h4>
+      <ol class="g_spisok">
+         <li><a href="#">05:30, Новоазовск АС - Таганрог АВ</a></li>
+         <li><a href = "#">06:05, Седово АС - Донецк Южный АВ</a></li>
+         <li><a href = "#">06:05, Новоазовск АС - Донецк Южный АВ</a></li> 
+         <li><a href = "#">07:05, Седово АС - Донецк Южный АВ</a></li>
+         <li><a href = "#">09:40, Донецк Южный АВ - Таганрог АВ</a></li>
+         <li><a href = "#">10:00, Седово АС - Донецк Южный АВ</a></li>
+         <li><a href = "#">12:35, Новоазовск АС - Донецк Южный АВ</a></li>
+         <li><a href = "#">15:30, Седово АС - Донецк Южный АВ</a></li>
+         <li><a href = "#">17:10, 	Донецк Южный АВ - Седово АС</a></li>
+         <li><a href = "#">20:05,Донецк Южный АВ - Седово АС</a></li>
+      </ol>
+   </div>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+     function slowScroll(id) {
+       $('html, body').animate({
+         scrollTop: $(id).offset().top
+       }, 500);
+     }
+ 
+     $(document).on("scroll", function () {
+       if($(window).scrollTop() === 0)
+         $("header").removeClass("fixed");
+       else
+         $("header").attr("class", "fixed");
+     });
+   </script>
+   
+</body>
+</html>

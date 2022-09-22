@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Культура и искусство</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html"><img src="img/logo.gif" width="75" height="85"  alt=""> </a>
+    </div>
+    <div id="about">
+        <a href="history.html" rel="noopener noreferrer" title="История города" >История города</a>
+        <a href="structure.html" title="Инфраструктура">Инфраструктура</a>
+        <a href="culture.html"  title="Культура и исскуство">Культура и исскуство</a>
+        <a href="feedback.html" title="Обратная связь">Обратная связь</a>
+      </div>
+   </header>
+
+
+   <div id="overview">
+      <h2>Культура и искусство</h2>
+      <h4> </h4>
+  
+      <div class="img">
+        <img src="img/p1.jpg" alt="">
+        <span> <h3>Памятник с портретом Владимира Бойко (ММК им. Ильича)</h3>   </span>
+      </div>
+      <div class="img">
+        <img src="img/p2.jpg" alt="">
+        <span>  <h3>Памятник с портретом Владимира Бойко (ММК им. Ильича)</h3> </span>
+      </div>
+      <div class="img">
+        <img src="img/p3.jpg" alt="">
+        <span><h3>Природный источник Новоазовской минеральной воды </h3>   </span>
+      </div>
+      <div class="img">
+        <img src="img/p4.jpg" alt="">
+        <span> h3>Природный источник Новоазовской минеральной воды </h3>   </span>
+      </div>
+      <div class="img">
+         <img src="img/500.jpg" alt="">
+         <span> <h3>Святониколаевская церковь </h3>   </span>
+       </div>
+       <div class="img">
+         <img src="img/n2.jpg" alt="">
+         <span> <h3>Святониколаевская церковь </h3>  </span>
+       </div>
+       
+      <div class="img">
+        <img src="https://avatars.mds.yandex.net/get-altay/1879888/2a0000016a03879cf4e46dcfe1a9fa1e9a0b/XXXL" alt="">
+        <span><h3>Региональный ландшафтный парк Меотида </h3> </span>
+      </div>
+      <div class="img">
+        <img src="https://avatars.mds.yandex.net/get-altay/1545421/2a0000016a038791ab66116e6085111c714a/XXXL" alt="">
+        <span> <h3>Региональный ландшафтный парк Меотида </h3> </span>
+      </div>
+    </div>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+     function slowScroll(id) {
+       $('html, body').animate({
+         scrollTop: $(id).offset().top
+       }, 500);
+     }
+ 
+     $(document).on("scroll", function () {
+       if($(window).scrollTop() === 0)
+         $("header").removeClass("fixed");
+       else
+         $("header").attr("class", "fixed");
+     });
+   </script>
+
+   
+</body>
+</html>

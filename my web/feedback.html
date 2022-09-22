@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Обратная связь</title>
+</head>
+<body>
+   <header>
+      <div id="logo">
+       <li><a href="index.html"><img src="img/logo.gif" width="75" height="85" alt=""> </a></li>
+      </div>
+      <div id="about">
+          <a href="history.html" title="История города" >История города</a>
+          <a href="structure.html" title="Инфраструктура">Инфраструктура</a>
+          <a href="culture.html"  title="Культура и исскуство">Культура и исскуство</a>
+          <a href="feedback.html" title="Обратная связь">Обратная связь</a>
+      </div>
+      <div id="contacts">
+         <center><h5><img src="img/@.png" width="50" height="50" alt=""> Обратная связь</h5></center>
+         <form id="feedback">
+           <label for="name">Имя <span>*</span></label><br>
+           <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+           <label for="email">Ваша почта <span>*</span></label><br>
+              <input type="email" placeholder="Введите email" name="email" id="email"><br>
+              <label for="message">Сообщение <span>*</span></label><br>
+              <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+              <div id="mess_send" class="btn">Отправить</div>
+         </form>
+       </div>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script>
+         function slowScroll(id) {
+           $('html, body').animate({
+             scrollTop: $(id).offset().top
+           }, 500);
+         }
+     
+         $(document).on("scroll", function () {
+           if($(window).scrollTop() === 0)
+             $("header").removeClass("fixed");
+           else
+             $("header").attr("class", "fixed");
+         });
+       </script>
+   </header>
+
+   
+</body>
+</html>

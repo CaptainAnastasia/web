@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новоазовск</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div id="ilogo">
+      <a href="index.html"><img src="img/logo.gif" width="75" height="85" alt=""> </a>
+    </div>
+    <div id="aabout">
+        <a href="history.html" rel="noopener noreferrer" title="История города" >История города</a>
+        <a href="structure.html" title="Инфраструктура">Инфраструктура</a>
+        <a href="culture.html"  title="Культура и исскуство">Культура и исскуство</a>
+        <a href="feedback.html" title="Обратная связь">Обратная связь</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Новоазовск</h1>
+    <h3>Наш любимый город!</h3>
+  </div>
+
+
+
+  <div id="overview">
+    <h2>Последние события</h2>
+    <h4> </h4>
+
+    <div class="img">
+      <img src="img/33.jpg" alt="">
+      <span>Пели гимн РФ: ЛЕПС, ЖАСМИН, ГАЗМАНОВ И ДРУГИЕ АРТИСТЫ ВЫСТУПИЛИ НА ОККУПИРОВАННОМ ДОНБАССЕ</span>
+    </div>
+    <div class="img">
+      <img src="img/34.jpg" alt="">
+      <span>Для военной подготовки школьников в Новоазовсе используют списаное оружие боевиков</span>
+    </div>
+    <div class="img">
+      <img src="img/54.jpg" alt="">
+      <span>В Седово отменили некоторые коронавирусные ограничения</span>
+    </div>
+    <div class="img">
+      <img src="img/11.jpg" alt="">
+      <span>Из Волгограда в Новоазовск доставили 20 тонн гуманитарной помощи</span>
+    </div>
+    <div class="img">
+      <img src="img/77.jpg" alt="">
+      <span>В ДНР и ЛНР проведут референдумы с поддержкой России</span>
+    </div>
+    <div class="img">
+      <img src="img/99.jpeg" alt="">
+      <span>Юные спортсмены из ДНР и ЛНР проведут тренировочные сборы в Северной Осетии</span>
+    </div>
+  </div>
+
+  <div id="ooverview">
+    <h2>Пейзажи</h2>
+    <h4> </h4>
+
+    <div class="img">
+      <img src="img/i.jpg" alt="">
+      <span>Живописный закат</span>
+    </div>
+    <div class="img">
+      <img src="img/lll.jpg" alt="">
+      <span>Центральная улица Новоазовска</span>
+    </div>
+    <div class="img">
+      <img src="img/ii.jpg" alt="">
+      <span>Облачный мост</span>
+    </div>
+    <div class="img">
+      <img src="img/ll.jpg" alt="">
+      <span>Весенняя набережная</span>
+    </div>
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
