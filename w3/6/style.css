@@ -1,0 +1,40 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 1152;
+  stroke-dashoffset: 1;
+  animation: line-ani 5s forwards;
+}
+
+@keyframes line-ani {
+  to {
+    stroke-dashoffset: -1152;
+    stroke-dasharray: 1152;
+  }
+}
+/* #logo path:nth-child(1) {
+  stroke-dasharray: 1152;
+  stroke-dashoffset: 1;
+  animation: line-ani 5s forwards;
+}
+
+@keyframes line-ani {
+  to {
+    stroke-dashoffset: 1152;
+    stroke-dasharray: -1152;
+  }
+} */
